@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "logo": "Francel Prowo"
+  },
+  "hero": {
+    "name": "Francel Prowo",
+    "title": "I'm a Fullstack Developer with React & Django and 4 years of experience",
+    "description": "I design modern, high-performance, and accessible interfaces. Passionate about the web and naturally curious, I use the latest tools to create seamless and engaging user experiences.",
+    "cta_contact": "Hire me",
+    "cta_projects": "See my projects",
+    "read_more": "Read more...",
+    "facebook_title": "Contact me on Facebook",
+    "linkedin_title": "My LinkedIn",
+    "email_title": "My Email",
+    "github_title": "My GitHub"
+  },
+  "about": {
+    "title": "About Me",
+    "quote": "A beautiful interface is like a good joke — you shouldn't have to explain it.",
+    "intro1": "Hello 👋 my name is <strong>Francel</strong>, a passionate frontend developer based in Montreal. I love turning ideas into fluid, accessible and visually engaging interfaces.",
+    "intro2": "I mainly work with <strong>React</strong>, <strong>Typescript</strong>, <strong>Tailwind CSS</strong> and modern tools like <strong>Vite</strong>, <strong>Git</strong> and <strong>Figma</strong>. I'm very comfortable with REST and GraphQL APIs and have solid experience with databases like <strong>PostgreSQL</strong> and <strong>MySQL</strong>.",
+    "intro3": "I also have strong backend skills thanks to my experience with <strong>Python</strong>, particularly <strong>Django</strong>. I'm rigorous, curious, and always seeking optimization. Outside of code, I enjoy music (like everyone, right?), football, and I’m still trying to be consistent at the gym.",
+    "download_cv": "Download my resume",
+    "tools_title": "My Tools",
+    "education_title": "Education",
+    "experience_title": "Professional Experience",
+    "formations": [
+      {
+        "pediode": "2022 - 2024",
+        "titre": "Master in Information Systems Technologies",
+        "description": "Second in my class",
+        "lieu": "Yessenov University, Kazakhstan"
+      },
+      {
+        "pediode": "2016 - 2019",
+        "titre": "Bachelor's Degree in Computer Science & Networks",
+        "description": "Sixth in my class",
+        "lieu": "IUT of Bandjoun, Cameroon"
+      },
+      {
+        "pediode": "2016 - 2018",
+        "titre": "DUT (2-year Degree) in Software Engineering",
+        "description": "Sixth in my class",
+        "lieu": "IUT of Bandjoun, Cameroon"
+      },
+      {
+        "pediode": "2015 - 2016",
+        "titre": "High School Diploma – Math & Physics",
+        "description": "With honors",
+        "lieu": "Bilingual High School of Bafoussam Rural, Cameroon"
+      }
+    ],
+    "experiences": [
+      {
+        "pediode": "April 2023 – April 2025",
+        "titre": "Frontend Developer",
+        "description": "I used React.js, Typescript and Tailwind CSS to build modern, high-performance interfaces.",
+        "lieu": "Vitteck Agency, Dubai, United Arab Emirates"
+      },
+      {
+        "pediode": "Sept 2021 – Dec 2021",
+        "titre": "React Frontend Developer",
+        "description": "Worked on large-scale projects using React.js.",
+        "lieu": "KevMax Sarl, Yaoundé, Cameroon"
+      },
+      {
+        "pediode": "Oct 2020 – Aug 2021",
+        "titre": "Fullstack Developer",
+        "description": "Used React, Django, Wordpress and PHP to create web apps.",
+        "lieu": "FOSEINT LTD, Douala, Cameroon"
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Recent Projects",
+    "list": [
+      {
+        "title": "West Heaven Hotel – Hotel Booking App",
+        "description": "Modernly styled React app for booking hotel rooms. Includes search, reservation, and room management features.",
+        "image": "/images/hotel.png",
+        "link": "https://west-heaven-hotel.netlify.app/",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": [
+          "React",
+          "Bootstrap",
+          "REST API",
+          "Tailwind CSS",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "Shopsy – E-commerce App",
+        "description": "React and Django-based e-commerce app inspired by Nike's UI. Includes cart, checkout, and product management features.",
+        "image": "/images/shopsy 2.png",
+        "link": "https://demo-crypto.netlify.app",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": ["React", "Django", "REST API", "Tailwind CSS", "PostgreSQL"]
+      },
+      {
+        "title": "237coach – Fitness Coaching Site",
+        "description": "Website for sports coaching. Showcases services, testimonials, and includes a contact form.",
+        "image": "/images/237coach.png",
+        "link": "https://237coach.com/",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": ["React", "Django", "REST API", "Tailwind CSS", "PostgreSQL"]
+      },
+      {
+        "title": "Ouispeak – Language Learning App",
+        "description": "Web app for learning languages with native speakers. Includes chat, video calls, and resource sharing.",
+        "image": "/images/ouispeak.png",
+        "link": "https://ouispeak.io/en",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": [
+          "Next.js",
+          "Tailwind CSS",
+          "REST API",
+          "Typescript",
+          "Multi-language"
+        ]
+      },
+      {
+        "title": "Facebook 2.0 – Facebook Clone in React",
+        "description": "Facebook-style React app with posts, comments, and like features.",
+        "image": "/images/facebook2.0.png",
+        "link": "https://ouispeak.io/en",
+        "github": "https://github.com/FrancelLeBoss/facebook-2.0",
+        "techs": ["React.js", "Tailwind CSS", "REST API", "Firebase"]
+      },
+      {
+        "title": "Personal Portfolio",
+        "description": "Responsive portfolio built with React, TailwindCSS, and Vite. Features light/dark theme, animations, and a modern UI.",
+        "image": "/images/portfolio.png",
+        "link": "https://francelprowo.dev",
+        "github": "https://github.com/FrancelLeBoss/portfolio-francel",
+        "techs": ["React", "Tailwind", "Vite", "Dark Mode"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "intro": "Got a project idea? Freelance need? Or just want to talk tech? Feel free to reach out 👇",
+    "email": "Email",
+    "call": "Call me",
+    "meet": "Meet me",
+    "website": "Website",
+    "leaveMessage": "Leave a message",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send message",
+      "success": "Thanks! Your message has been sent.",
+      "error": "Something went wrong. Please try again."
+    }
+  }
+}

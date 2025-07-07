@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "logo": "Francel Prowo"
+  },
+  "hero": {
+    "name": "Francel Prowo",
+    "title": "Je suis un développeur Fullstack React & Django avec 4 ans d'expérience",
+    "description": "Je conçois des interfaces modernes, performantes et accessibles. Passionné par le web et curieux de nature, j'utilise les outils les plus récents pour créer des expériences utilisateur fluides et engageantes.",
+    "cta_contact": "Recrutez moi",
+    "cta_projects": "Voir mes projets",
+    "read_more": "Lire plus...",
+    "facebook_title": "Contactez moi sur Facebook",
+    "linkedin_title": "Mon LinkedIn",
+    "email_title": "Mon Email",
+    "github_title": "Mon GitHub"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "quote": "Une belle interface, c'est comme une bonne blague — on ne devrait pas avoir à l'expliquer.",
+    "intro1": "Hello 👋 Je m'appelle <strong>Francel</strong>, développeur frontend passionné basé à Montréal. J’adore transformer des idées en interfaces fluides, accessibles et visuellement engageantes.",
+    "intro2": "Je travaille principalement avec <strong>React</strong>, <strong>Typescript</strong>, <strong>Tailwind CSS</strong> et des outils modernes comme <strong>Vite</strong>, <strong>Git</strong> ou <strong>Figma</strong>. Je suis très à l'aise avec l'intégration d'API REST et GraphQL, et j'ai une bonne expérience avec les bases de données comme <strong>PostgreSQL</strong> et <strong>MySQL</strong>.",
+    "intro3": "J'ai également des compétences solides en backend grâce à mon expérience avec <strong>Python</strong>, notamment <strong>Django</strong>. Rigoureux, curieux et toujours en quête d’optimisation, j'aime concevoir des expériences utilisateurs intuitives et performantes. En dehors du code, j'aime la musique (comme tout le monde ?), le football et j’essaie encore d'être régulier à la salle de sport.",
+    "download_cv": "Télécharger mon CV",
+    "tools_title": "Mes outils de travail",
+    "education_title": "Formation",
+    "experience_title": "Parcours Professionnel",
+    "formations": [
+      {
+        "pediode": "2022 - 2024",
+        "titre": "Master de Technologies des Systèmes d’Information",
+        "description": "Deuxième de ma promotion",
+        "lieu": "Université Yessenov, Kazakhstan"
+      },
+      {
+        "pediode": "2016 - 2019",
+        "titre": "Licence en Informatique et Réseaux",
+        "description": "Sixième de ma promotion",
+        "lieu": "IUT de Bandjoun, Cameroun"
+      },
+      {
+        "pediode": "2016 - 2018",
+        "titre": "DUT (BAC+2) en Génie Logiciel",
+        "description": "Sixième de ma promotion",
+        "lieu": "IUT de Bandjoun, Cameroun"
+      },
+      {
+        "pediode": "2015 - 2016",
+        "titre": "Baccalauréat Mathématiques et Physique",
+        "description": "Mention Assez-bien",
+        "lieu": "Lycée Bilingue de Bafoussam Rural, Cameroun"
+      }
+    ],
+    "experiences": [
+      {
+        "pediode": "Avril 2023 - Avril 2025",
+        "titre": "Développeur Frontend",
+        "description": "J'ai utilisé React.js, Typescript et Tailwind CSS pour créer des interfaces modernes et performantes.",
+        "lieu": "Vitteck Agency, Dubaï, Émirats Arabes Unis"
+      },
+      {
+        "pediode": "Septembre 2021 - Décembre 2021",
+        "titre": "Développeur Frontend React",
+        "description": "J'ai travaillé sur des projets de grande envergure, en utilisant React.js.",
+        "lieu": "KevMax Sarl, Yaoundé, Cameroun"
+      },
+      {
+        "pediode": "Octobre 2020 - Août 2021",
+        "titre": "Développeur Fullstack",
+        "description": "J'ai utilisé React, Django, Wordpress et PHP pour créer des applications web.",
+        "lieu": "FOSEINT LTD, Douala, Cameroun"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mes projets récents",
+    "list": [
+      {
+        "title": "West Heaven Hotel – Réservation d’hôtel",
+        "description": "Application React au design moderne pour la réservation de chambres d'hôtel. Fonctionnalités de recherche, réservation et gestion des chambres.",
+        "image": "/images/hotel.png",
+        "link": "https://west-heaven-hotel.netlify.app/",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": [
+          "React",
+          "Bootstrap",
+          "API REST",
+          "Tailwind CSS",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "Shopsy – E-commerce",
+        "description": "Application React et Django de vente en ligne, inspirée du style Nike. Fonctionnalités de panier, paiement et gestion des produits.",
+        "image": "/images/shopsy 2.png",
+        "link": "https://demo-crypto.netlify.app",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": ["React", "Django", "API REST", "Tailwind CSS", "PostgreSQL"]
+      },
+      {
+        "title": "237coach – Coaching sportif",
+        "description": "Site web de coaching sportif. Présentation des services, témoignages et formulaire de contact.",
+        "image": "/images/237coach.png",
+        "link": "https://237coach.com/",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": ["React", "Django", "API REST", "Tailwind CSS", "PostgreSQL"]
+      },
+      {
+        "title": "Ouispeak – Apprentissage des langues",
+        "description": "Application web pour apprendre les langues avec des locuteurs natifs. Chat, appels vidéo et partage de ressources.",
+        "image": "/images/ouispeak.png",
+        "link": "https://ouispeak.io/en",
+        "github": "https://github.com/FrancelLeBoss/my_shopsy",
+        "techs": [
+          "Next.js",
+          "Tailwind CSS",
+          "API REST",
+          "Typescript",
+          "Multi-language"
+        ]
+      },
+      {
+        "title": "Facebook 2.0 – Clone React",
+        "description": "Application React imitant Facebook. Fonctionnalités de publication, commentaires et likes.",
+        "image": "/images/facebook2.0.png",
+        "link": "https://ouispeak.io/en",
+        "github": "https://github.com/FrancelLeBoss/facebook-2.0",
+        "techs": ["React.js", "Tailwind CSS", "API REST", "Firebase"]
+      },
+      {
+        "title": "Portfolio personnel",
+        "description": "Portfolio responsive développé avec React, TailwindCSS et Vite. Thème clair/sombre, navigation animée et design moderne.",
+        "image": "/images/portfolio.png",
+        "link": "https://francelprowo.dev",
+        "github": "https://github.com/FrancelLeBoss/portfolio-francel",
+        "techs": ["React", "Tailwind", "Vite", "Dark Mode"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Me contacter",
+    "intro": "Une idée de projet ? Une mission freelance ? Ou simplement discuter tech ? N’hésite pas à me contacter 👇",
+    "email": "Email",
+    "call": "Appelez-moi",
+    "meet": "Rencontrez-moi",
+    "website": "Site web",
+    "leaveMessage": "Laissez un message",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "success": "Merci ! Votre message a bien été envoyé.",
+      "error": "Une erreur est survenue. Essayez de nouveau."
+    }
+  }
+}

@@ -1,18 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import {
-  SunIcon,
-  MoonIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => setMounted(true), []);
 
@@ -32,10 +30,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#hero", label: "Home" },
-    { href: "#about", label: "About Me" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "#hero", label: t("nav.home") },
+    { href: "#about", label: t("nav.about") },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#contact", label: t("nav.contact") },
   ];
 
   return (
@@ -46,7 +44,7 @@ export default function Navbar() {
           href="/"
           className="cursor-pointer text-2xl font-signature tracking-wide text-secondary dark:text-accent"
         >
-          Francel Prowo
+          {t("nav.logo")}
         </a>
 
         {/* Desktop Menu */}
@@ -65,6 +63,8 @@ export default function Navbar() {
 
         {/* Theme Toggle */}
         <ThemeToggle mini_format={isMobile} />
+        {/* Language Toggle */}
+        <LanguageToggle />
         {/* Burger Icon */}
         <button
           className="md:hidden ml-4 text-secondary dark:text-textLight"

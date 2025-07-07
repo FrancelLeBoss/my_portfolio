@@ -1,83 +1,102 @@
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
 export default function Project() {
-  const projects = [
-    {
-      title: "West Heaven Hotel - Reservation de  chambres d'hotel",
-      description: "Application React au design moderne pour la réservation de chambres d'hôtel. Fonctionnalités de recherche, réservation et gestion des chambres.",
-      image: "/images/hotel.png",
-      link: "https://west-heaven-hotel.netlify.app/",
-      github: "https://github.com/FrancelLeBoss/my_shopsy",
-      techs: ["React", "Bootstrap", "API REST", "Tailwind css", "PostgreSQL"]
+  const { t } = useTranslation();
+
+  const projects = t("projects.list", { returnObjects: true });
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.2,
+      },
     },
-    {
-      title: "Shopsy - E-commerce",
-      description: "Application React et Django de vente en ligne, recopiant le style des boutiques Nike. Fonctionnalités de panier, paiement et gestion des produits.",
-      image: "/images/shopsy 2.png",
-      link: "https://demo-crypto.netlify.app",
-      github: "https://github.com/FrancelLeBoss/my_shopsy",
-      techs: ["React", "Django", "API REST", "Tailwind css", "PostgreSQL"]
-    },
-    {
-      title: "237coach - Coaching sportif",
-      description: "Site web de coaching sportif. Présentation des services, témoignages et formulaire de contact.",
-      image: "/images/237coach.png",
-      link: "https://237coach.com/",
-      github: "https://github.com/FrancelLeBoss/my_shopsy",
-      techs: ["React", "Django", "API REST", "Tailwind css", "PostgreSQL"]
-    },
-    {
-      title: "Ouispeak - Application d'apprentissage des langues",
-      description: "Application web pour apprendre des langues avec des speakers natifs. Fonctionnalités de chat, appels vidéo et partage de ressources.",
-      image: "/images/ouispeak.png",
-      link: "https://ouispeak.io/en",
-      github: "https://github.com/FrancelLeBoss/my_shopsy",
-      techs: ["Next.js", "Tailwindcss", "API REST", "Typescript", "Multi-language"]
-    },
-    {
-      title: "Facebook 2.0 - Clone de Facebook (React)",
-      description: "Application React imitant Facebook. Fonctionnalités de publication, commentaires et likes.",
-      image: "/images/facebook2.0.png",
-      link: "https://ouispeak.io/en",
-      github: "https://github.com/FrancelLeBoss/facebook-2.0",
-      techs: ["React.js", "Tailwindcss", "API REST", "Firebase"]
-    },
-    {
-      title: "Portfolio personnel",
-      description: "Un portfolio responsive développé avec React, TailwindCSS et Vite. Thème clair/sombre, navigation animée et design moderne.",
-      image: "/images/portfolio.png",
-      link: "https://francelprowo.dev",
-      github: "https://github.com/FrancelLeBoss/portfolio-francel",
-      techs: ["React", "Tailwind", "Vite", "Dark Mode"]
-    }
-  ];
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   return (
-    <section id="projects" className="py-16 px-6 bg-white dark:bg-backgroundDark text-primary dark:text-textLight">
+    <motion.section
+      id="projects"
+      className="py-16 px-6 bg-white dark:bg-backgroundDark text-primary dark:text-textLight"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-accent mb-12">
-          Mes projets recents
+          {t("projects.title")}
         </h2>
 
         <div className="grid gap-10 md:grid-cols-2">
           {projects.map((project, index) => (
-            <div key={index} className="rounded-xl overflow-hidden bg-backgroundLight dark:bg-secondary/10 shadow-lg hover:shadow-xl transition duration-300">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              whileHover={{
+                rotateX: 6,
+                rotateY: -6,
+                scale: 1.04,
+                transition: { type: "spring", stiffness: 300, damping: 15 },
+              }}
+              style={{
+                perspective: 1000, // Important pour l’effet 3D
+                transformStyle: "preserve-3d",
+              }}
+              className="cursor-pointer rounded-xl overflow-hidden bg-backgroundLight dark:bg-secondary/10 shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-secondary dark:text-accent">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-secondary dark:text-accent">
+                  {project.title}
+                </h3>
                 <p className="mt-2 text-sm">{project.description}</p>
+
                 <div className="mt-4 flex flex-wrap gap-2 text-xs font-medium">
                   {project.techs.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 bg-accent/10 text-accent rounded-md">{tech}</span>
+                    <span
+                      key={i}
+                      className="px-2 py-1 bg-accent/10 text-accent rounded-md"
+                    >
+                      {tech}
+                    </span>
                   ))}
                 </div>
+
                 <div className="mt-4 flex gap-4">
-                  <a href={project.link} target="_blank" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Live</a>
-                  <a href={project.github} target="_blank" className="text-sm text-gray-600 dark:text-gray-300 hover:underline">Code</a>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-gray-600 dark:text-gray-300 hover:underline"
+                  >
+                    Code
+                  </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
