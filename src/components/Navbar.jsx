@@ -1,8 +1,13 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import ThemeToggle from './ThemeToggle';
+import { useState, useEffect } from "react";
+import {
+  SunIcon,
+  MoonIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -20,32 +25,38 @@ export default function Navbar() {
     checkScreenSize();
 
     // Écouter les changements de taille d'écran
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
     // Nettoyer l'event listener
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   const navLinks = [
-    { href: '#hero', label: 'Home' },
-    { href: '#about', label: 'About Me' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#hero", label: "Home" },
+    { href: "#about", label: "About Me" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
     <header className="w-full fixed top-0 z-50 bg-backgroundLight dark:bg-backgroundDark text-primary dark:text-textLight shadow-sm backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="cursor-pointer text-2xl font-signature tracking-wide text-secondary dark:text-accent">
+        <a
+          href="/"
+          className="cursor-pointer text-2xl font-signature tracking-wide text-secondary dark:text-accent"
+        >
           Francel Prowo
-        </div>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-2 text-sm font-medium">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              <a href={href} className="hover:bg-accent/20 p-3 transition dark:text-accent/80 text-green-800">
+              <a
+                href={href}
+                className="hover:bg-accent/20 p-3 transition dark:text-accent/80 text-green-800"
+              >
                 {label}
               </a>
             </li>
@@ -53,7 +64,7 @@ export default function Navbar() {
         </ul>
 
         {/* Theme Toggle */}
-        <ThemeToggle mini_format={isMobile}/>
+        <ThemeToggle mini_format={isMobile} />
         {/* Burger Icon */}
         <button
           className="md:hidden ml-4 text-secondary dark:text-textLight"

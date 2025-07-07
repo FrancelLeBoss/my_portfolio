@@ -1,8 +1,4 @@
-import { ArrowDownIcon } from "@heroicons/react/24/outline";
-import {
-  ArrowRightCircleIcon,
-  PhoneArrowDownLeftIcon,
-} from "@heroicons/react/24/solid";
+import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { RiContractFill } from "react-icons/ri";
@@ -15,18 +11,29 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.6,
-        staggerChildren: 0.3,
+        duration: 0.8,
+        staggerChildren: 0.01, // Plus rapide entre chaque élément
+        delayChildren: 0.1, // Petit délai avant le premier élément
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: {
+      opacity: 0,
+      scale: 0.01, // Commence comme un point
+      y: 20,
+    },
     visible: {
       opacity: 1,
+      scale: 1, // Grandit à sa taille normale
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+        type: "spring",
+        bounce: 0.2, // Léger rebond à la fin
+      },
     },
   };
 
@@ -43,15 +50,17 @@ export default function Hero() {
         <motion.img
           src="/images/my_photo.png"
           alt="Francel Prowo"
-          className="mt-10 bg-secondary/20 transition duration-500 hover:scale-105
+          className="mt-20 md:mt-8 bg-secondary/20 transition
            hover:shadow-accent/40 w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 
-           hover:h-auto rounded-full object-cover border-4 border-secondary/10 
+           rounded-full object-cover border-4 border-secondary/10 
            shadow-secondary/10 shadow-xl"
           animate={{
-            y: [0, -10, 0],
+            //y: [0, -10, 0],
+            //rotate: [0, 5, -5, 0], // Légère rotation pour plus de dynamisme
+            scale: [1, 1.06, 1], // Légère augmentation
           }}
           transition={{
-            duration: 4,
+            duration: 3,
             repeat: Infinity,
             ease: "easeInOut",
           }}
@@ -70,7 +79,8 @@ export default function Hero() {
           className="mt-2 text-xl text-secondary dark:text-accent md:text-2xl font-semibold"
           variants={itemVariants}
         >
-          Développeur Fullstack React & Django
+          Développeur Fullstack React & Django <br />
+          avec 4 ans d'experience
         </motion.h2>
         <motion.p
           className="mt-4 text-primary dark:text-textLight max-w-md"
