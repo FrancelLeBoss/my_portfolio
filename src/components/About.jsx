@@ -4,7 +4,7 @@ import { RiDownload2Fill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const formations = t("about.formations", { returnObjects: true });
   const experiences = t("about.experiences", { returnObjects: true });
@@ -70,7 +70,7 @@ export default function About() {
 
               {/* CV */}
               <a
-                href="/files/Francel_Cabrel_CV_Frontend_Montreal_FR.pdf"
+                href={`/files/${i18n.language}/Francel_Cabrel_CV_Frontend_Montreal.pdf`}
                 download
                 className="mt-4 flex gap-1 items-center justify-center bg-secondary/90 text-white px-6 py-2 rounded-full shadow hover:scale-105 transition"
               >
