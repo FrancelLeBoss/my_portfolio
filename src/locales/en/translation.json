@@ -156,5 +156,12 @@
       "success": "Thanks! Your message has been sent.",
       "error": "Something went wrong. Please try again."
     }
+  },
+  "seo": {
+    "title": "Francel Prowo – Fullstack Web Developer",
+    "description": "Portfolio of Francel Prowo, a React frontend developer based in Montreal.",
+    "keywords": "Francel Prowo, web developer, React, freelance, Montreal, Tailwind, Vite",
+    "ogTitle": "Francel Prowo's Portfolio",
+    "ogDescription": "Explore my web development projects."
   }
 }

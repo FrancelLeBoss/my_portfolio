@@ -156,5 +156,12 @@
       "success": "Merci ! Votre message a bien été envoyé.",
       "error": "Une erreur est survenue. Essayez de nouveau."
     }
+  },
+  "seo": {
+    "title": "Francel Prowo – Développeur Web Fullstack",
+    "description": "Portfolio de Francel Prowo, développeur frontend React basé à Montréal.",
+    "keywords": "Francel Prowo, développeur web, React, freelance, Montréal, Tailwind, Vite",
+    "ogTitle": "Portfolio de Francel Prowo",
+    "ogDescription": "Découvrez mes projets de développement web."
   }
 }
