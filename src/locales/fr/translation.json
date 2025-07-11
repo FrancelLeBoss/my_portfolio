@@ -30,12 +30,6 @@
     "experience_title": "Parcours Professionnel",
     "formations": [
       {
-        "pediode": "2022 - 2024",
-        "titre": "Master de Technologies des Systèmes d’Information",
-        "description": "Deuxième de ma promotion",
-        "lieu": "Université Yessenov, Kazakhstan"
-      },
-      {
         "pediode": "2016 - 2019",
         "titre": "Licence en Informatique et Réseaux",
         "description": "Sixième de ma promotion",

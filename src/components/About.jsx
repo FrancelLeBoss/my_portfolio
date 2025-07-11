@@ -105,7 +105,7 @@ export default function About() {
                     >
                       <img
                         src={`/images/${img}`}
-                        alt=""
+                        alt={`${label} logo`}
                         className="w-16 h-16"
                       />
                       <span className="text-xs md:text-sm text-secondary dark:text-accent">
